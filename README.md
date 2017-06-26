@@ -12,8 +12,8 @@ This is the .NET SDK to call https://app.earnshark.com API. Contains methods to 
 Through this you will be able to access the EarnShark API through your code.
 
 After installation of the EarnShark SDK package call the following command in your main function: `RunAsync().Wait();`  
-Then create a method: 'static async Task RunAsync(){}'  
-Within the method initialize the sdk with 'earnshark-sdk earnsharksdk = new earnsharksdk();'
+Then create a method: `static async Task RunAsync(){}`  
+Within the method initialize the sdk with `earnshark-sdk earnsharksdk = new earnsharksdk();`
 
 ## Available Methods
 * getAccountInformation - Retrieve information on a particular account/subscription
