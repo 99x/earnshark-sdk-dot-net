@@ -73,6 +73,12 @@ JToken newSubs = await earnsharksdk.addNewSubscription(product_id, key, jObject)
 ```
 ### Generate a transaction token for the Payment URL of an Account
 ```.NET
+JObject body = JObject.Parse(@"
+                    {""redirect"":""https://es.coverya.no/#/licensing"",
+                        ""account_id"":""kavs"",""product_id"":""45"",
+                        ""key"":""c62960114d03c60bb7c0ab36571fed8370888a991eb9d90719a2d7c13a8bfa2705139e2e43a719021d1b610aebd2fe7d""
+                    }");
+                    
 JToken transactionId = await earnsharksdk.getPaymentToken(body);
 string url = earnsharksdk.getTransactionURL(transactionId);
 ```
