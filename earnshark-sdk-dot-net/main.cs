@@ -11,12 +11,12 @@ using Newtonsoft.Json;
 
 namespace earnshark_sdk_dot_net
 {
-    public class Class1
+    public class Main
     {
         static HttpClient client = new HttpClient();
 
         static string baseURL = "https://app.earnshark.com/prod/";
-        static string appDir = "http://earnsharkbeta.com.s3-website-eu-west-1.amazonaws.com/";
+        static string appDir = "http://app.earnshark.com/";
 
         public async Task<JToken> addNewSubscription(int product_id, string key, JObject jObject)
         {
